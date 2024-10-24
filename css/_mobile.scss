@@ -1,0 +1,99 @@
+//navbar mobile
+
+@media(max-width: 760px){
+  .navbar{
+    justify-content: flex-end;
+  }
+  .bar{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+    margin-right: 30px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: rotate(45deg) translateY(11.5px); 
+  }  
+  .hamburger.active .bar:nth-child(3){
+    transform: rotate(-45deg) translateY(-11.5px); 
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: $background-color;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  .nav-item{
+    padding: 1.5rem 0;
+  }
+  
+  .nav-menu.active{
+    right: 0;
+    z-index: 5;
+  }
+  
+.carrousel-travel-container{
+  margin-top: 10vh;
+  .carrousel-travel{
+    .card{
+      min-width: 100%;
+    }
+  }
+}
+
+#about-car{
+  height: 100%;
+  background-size: cover;
+  .container-about-car{
+      display: block;
+      width: 100vw;
+      .txt-area-about-car{
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        .about-car-advantages{
+          flex-direction: column;
+          align-items: center;
+          img{
+            width: 30%;
+          }
+        }
+      }
+    img{
+      width: 90vw;
+        // height: 60vw
+    }
+  }
+}
+#form-send {
+  margin: 1%;
+  .container {
+    width: 95%;
+  }
+}
+
+#about-us{
+  height: 100%;
+  
+  .info-text-about-us{
+      img{
+        width: 60%;
+      }
+      .text-about-us{
+        width: 80%;
+        font-size: 1rem;
+    }
+  }
+}
+}
