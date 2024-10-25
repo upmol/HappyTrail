@@ -18,32 +18,24 @@
   border-radius: 0.5rem;
   border: none;
   font-size: 1.2rem;
-  -webkit-transition: all 400ms;
   transition: all 400ms;
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px antiquewhite, 0 0 10px antiquewhite;
-          box-shadow: 0 0 10px antiquewhite, 0 0 10px antiquewhite;
+  box-shadow: 0 0 10px antiquewhite, 0 0 10px antiquewhite;
 }
 
 .btn:hover {
   background-color: antiquewhite;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .surfacing {
-  -webkit-transform: translateX(50px);
-      -ms-transform: translateX(50px);
-          transform: translateX(50px);
-  -webkit-transition: all 0.5s ease;
+  transform: translateX(50px);
   transition: all 0.5s ease;
 }
 
 .surfacing.show {
   opacity: 1;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 * {
@@ -59,22 +51,15 @@ body {
 }
 
 #main_part {
-  background-image: url("../photo/landscape-lake-surrounded-by-mountains.jpg"), -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
-  background-image: url("../photo/landscape-lake-surrounded-by-mountains.jpg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
+  background-image: url("/photo/landscape-lake-surrounded-by-mountains.jpg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #main_part .logo_main img {
   z-index: 2;
@@ -93,7 +78,6 @@ body {
   pointer-events: none;
   z-index: 3;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, rgb(18, 55, 42) 100%);
 }
 
@@ -106,7 +90,6 @@ body {
   pointer-events: none;
   z-index: 3;
   top: 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, rgb(18, 55, 42) 100%);
 }
 
@@ -123,24 +106,14 @@ li a {
 .navbar {
   height: 70px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-branding {
@@ -149,7 +122,6 @@ li a {
 
 /* transition for links */
 .nav-link {
-  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -166,7 +138,6 @@ li a {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: white;
 }
@@ -189,13 +160,8 @@ li a {
   font-style: normal;
 }
 .carrousel-travel-container .carrousel-travel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   margin: 5vh;
 }
 .carrousel-travel-container .carrousel-travel .card {
@@ -204,8 +170,7 @@ li a {
   margin: 10px;
   border-radius: 0.5rem;
   background-color: #ADBC9F;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
 }
 .carrousel-travel-container .carrousel-travel .card a {
@@ -236,38 +201,29 @@ li a {
   line-height: 1.25rem;
 }
 .carrousel-travel-container .carrousel-travel .action {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-top: 1rem;
   color: #ffffff;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.25rem;
   background-color: #436850;
   padding: 4px 8px;
   border-radius: 4px;
 }
 .carrousel-travel-container .carrousel-travel .action span {
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .carrousel-travel-container .carrousel-travel .action:hover span {
-  -webkit-transform: translateX(4px);
-      -ms-transform: translateX(4px);
-          transform: translateX(4px);
+  transform: translateX(4px);
 }
 .carrousel-travel-container #prev-button,
 .carrousel-travel-container #next-button {
   position: absolute;
   top: 40%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   background-color: #436850;
   color: white;
   border: none;
@@ -284,7 +240,7 @@ li a {
 }
 
 #about-car {
-  background-image: url("../photo/map.png");
+  background-image: url("/photo/map.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,32 +251,22 @@ li a {
   text-align: center;
 }
 #about-car .container-about-car {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 #about-car .container-about-car .txt-area-about-car {
   width: 40%;
   color: #FBFADA;
   opacity: 0.9;
-  padding: 20px;
   border-radius: 30px;
   font-size: 1.5rem;
-  margin: 30px;
 }
 #about-car .container-about-car .txt-area-about-car p {
   margin-bottom: 5%;
 }
 #about-car .container-about-car .txt-area-about-car .about-car-advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-bottom: 5%;
@@ -336,46 +282,28 @@ li a {
 }
 
 #form-send {
-  background-image: url("../photo/layered-peaks-haikei (3).svg");
+  background-image: url("/photo/layered-peaks-haikei (3).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 #form-send .container {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 #form-send .form {
   width: 400px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#436850), to(#ADBC9F));
   background-image: linear-gradient(to bottom, #436850, #ADBC9F);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   border-radius: 0.5rem;
 }
 #form-send .title {
@@ -392,7 +320,6 @@ li a {
   border: none;
   outline: none;
   border-bottom: 1px solid wheat;
-  -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 #form-send .input:hover {
@@ -403,27 +330,16 @@ li a {
 
 #about-us {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 5vh;
 }
 #about-us .info-text-about-us {
   gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #about-us .info-text-about-us .card {
   width: 50vh;
@@ -441,6 +357,7 @@ li a {
 }
 
 #footer-part {
+  height: 100%;
   /* Текст поверх гор */
   /* Горные слои */
 }
@@ -460,16 +377,13 @@ li a {
   pointer-events: none;
   z-index: 3;
   top: 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 40%, rgb(18, 55, 42) 100%);
 }
 #footer-part .footer-text {
   position: absolute;
   top: 20px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   z-index: 10;
 }
@@ -521,9 +435,7 @@ li a {
 
 @media (max-width: 760px) {
   .navbar {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
   .bar {
     display: block;
@@ -536,28 +448,20 @@ li a {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: rotate(45deg) translateY(11.5px);
-        -ms-transform: rotate(45deg) translateY(11.5px);
-            transform: rotate(45deg) translateY(11.5px);
+    transform: rotate(45deg) translateY(11.5px);
   }
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: rotate(-45deg) translateY(-11.5px);
-        -ms-transform: rotate(-45deg) translateY(-11.5px);
-            transform: rotate(-45deg) translateY(-11.5px);
+    transform: rotate(-45deg) translateY(-11.5px);
   }
   .nav-menu {
     position: fixed;
     right: -100%;
     top: 70px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     background: #12372A;
     opacity: 0.9;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .nav-item {
@@ -582,28 +486,16 @@ li a {
     width: 100vw;
   }
   #about-car .container-about-car .txt-area-about-car {
-    width: 90%;
+    width: 80%;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     text-align: start;
   }
   #about-car .container-about-car .txt-area-about-car .about-car-advantages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   #about-car .container-about-car .txt-area-about-car .about-car-advantages img {
     width: 30%;
@@ -627,4 +519,4 @@ li a {
     width: 80%;
     font-size: 1rem;
   }
-}
+}/*# sourceMappingURL=style.css.map */
