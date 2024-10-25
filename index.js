@@ -69,24 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
     prevButton.addEventListener("click", scrollPrev);
   });
   
-//surfacing scroll effect
 
-const boxes = document.querySelectorAll('.surfacing');
-
-function checkBoxes(){
-  const triggerBottom = window.innerHeight * 0.8;
-
-  boxes.forEach(box => {
-    const boxTop = box.getBoundingClientRect().top;
-
-    if(boxTop < triggerBottom){
-      box.classList.add('show');
-    }else{
-      box.classList.remove('show');
-    }
-  });
-}
-
-window.addEventListener('scroll', checkBoxes);
-
-checkBoxes();
