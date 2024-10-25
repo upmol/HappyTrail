@@ -342,7 +342,7 @@ li a {
   justify-content: center;
 }
 #about-us .info-text-about-us .card {
-  width: 40vh;
+  max-width: 40vh;
 }
 #about-us .info-text-about-us img {
   -o-object-fit: cover;
@@ -513,7 +513,7 @@ li a {
     height: 100%;
   }
   #about-us .info-text-about-us .text-about-us {
-    width: 80%;
+    max-width: 80vh;
     font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
