@@ -51,7 +51,7 @@ body {
 }
 
 #main_part {
-  background-image: url("/photo/landscape-lake-surrounded-by-mountains.jpg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
+  background-image: url("../photo/landscape-lake-surrounded-by-mountains.jpg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ li a {
 }
 
 #about-car {
-  background-image: url("/photo/map.png");
+  background-image: url("../photo/map.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -282,7 +282,7 @@ li a {
 }
 
 #form-send {
-  background-image: url("/photo/layered-peaks-haikei (3).svg");
+  background-image: url("../photo/layered-peaks-haikei (3).svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
