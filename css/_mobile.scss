@@ -1,6 +1,13 @@
 //navbar mobile
 
 @media(max-width: 760px){
+  #main_part{
+    .logo_main{
+      img{
+        max-width: 250px;
+      }
+    }
+  }
   .navbar{
     justify-content: flex-end;
   }
@@ -57,6 +64,7 @@
       width: 100vw;
       .txt-area-about-car{
         width: 80%;
+        font-size: 0.8rem;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -66,13 +74,12 @@
           flex-direction: column;
           align-items: center;
           img{
-            width: 30%;
+            max-width: 250px;
           }
         }
       }
     img{
-      width: 90vw;
-        // height: 60vw
+      width: 250px;
     }
   }
 }
@@ -81,6 +88,15 @@
   .container {
     width: 95%;
   }
+  .form{
+    width: 18rem;
+  }
+  .input{
+    width: 15rem;
+  }
+  .btn{
+    width: 15rem;
+  }
 }
 
 #about-us{
@@ -88,11 +104,13 @@
   
   .info-text-about-us{
     .card{
-      max-width: 350px;
+      max-width: 300px;
     }
       .text-about-us{
-        max-width: 80vh;
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .photo-about-us{
+      max-width: 250px;
     }
   }
 }

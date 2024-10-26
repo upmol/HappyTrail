@@ -12,7 +12,7 @@
 
 .btn {
   height: 3rem;
-  width: 20rem;
+  width: 15rem;
   margin-top: 3rem;
   background-color: #436850;
   border-radius: 0.5rem;
@@ -344,10 +344,10 @@ li a {
 #about-us .info-text-about-us .card {
   max-width: 40vh;
 }
-#about-us .info-text-about-us img {
+#about-us .info-text-about-us .photo-about-us {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 20px;
 }
 #about-us .info-text-about-us .text-about-us {
@@ -435,6 +435,9 @@ li a {
 }
 
 @media (max-width: 760px) {
+  #main_part .logo_main img {
+    max-width: 250px;
+  }
   .navbar {
     justify-content: flex-end;
   }
@@ -488,6 +491,7 @@ li a {
   }
   #about-car .container-about-car .txt-area-about-car {
     width: 80%;
+    font-size: 0.8rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -499,10 +503,10 @@ li a {
     align-items: center;
   }
   #about-car .container-about-car .txt-area-about-car .about-car-advantages img {
-    width: 30%;
+    max-width: 250px;
   }
   #about-car .container-about-car img {
-    width: 90vw;
+    width: 250px;
   }
   #form-send {
     margin: 1%;
@@ -510,14 +514,25 @@ li a {
   #form-send .container {
     width: 95%;
   }
+  #form-send .form {
+    width: 18rem;
+  }
+  #form-send .input {
+    width: 15rem;
+  }
+  #form-send .btn {
+    width: 15rem;
+  }
   #about-us {
     height: 100%;
   }
   #about-us .info-text-about-us .card {
-    max-width: 350px;
+    max-width: 300px;
   }
   #about-us .info-text-about-us .text-about-us {
-    max-width: 80vh;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  #about-us .info-text-about-us .photo-about-us {
+    max-width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
