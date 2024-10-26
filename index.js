@@ -87,5 +87,5 @@ document.addEventListener("DOMContentLoaded", function () {
       top: 0,
       behavior: 'smooth'
     })
-  })
+  });
 
