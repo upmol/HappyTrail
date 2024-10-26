@@ -434,6 +434,51 @@ li a {
           clip-path: polygon(0 95%, 15% 55%, 30% 75%, 45% 45%, 60% 65%, 75% 40%, 90% 70%, 100% 55%, 100% 100%, 0 100%);
 }
 
+.wattsApp-btn {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #436850;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+.wattsApp-btn a {
+  margin-left: 10px;
+}
+.wattsApp-btn img {
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wattsApp-btn::after {
+  content: "Написать нам...";
+  position: absolute;
+  right: 70px;
+  padding: 5px 10px;
+  background-color: #436850;
+  color: #FBFADA;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  border-radius: 10px;
+}
+
+.wattsApp-btn:hover::after {
+  opacity: 1;
+}
+
+.wattsApp-btn:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 760px) {
   #main_part .logo_main img {
     max-width: 250px;
