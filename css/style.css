@@ -347,6 +347,7 @@ li a {
 #about-us .info-text-about-us img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-width: 350px;
   border-radius: 20px;
 }
 #about-us .info-text-about-us .text-about-us {
