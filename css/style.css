@@ -512,6 +512,9 @@ li a {
   #about-us {
     height: 100%;
   }
+  #about-us .info-text-about-us .card {
+    width: 350px;
+  }
   #about-us .info-text-about-us .text-about-us {
     max-width: 80vh;
     font-size: 1rem;
