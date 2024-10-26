@@ -491,7 +491,7 @@ li a {
   }
   #about-car .container-about-car .txt-area-about-car {
     width: 80%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -506,7 +506,7 @@ li a {
     max-width: 250px;
   }
   #about-car .container-about-car img {
-    width: 250px;
+    width: 18rem;
   }
   #form-send {
     margin: 1%;
@@ -515,7 +515,7 @@ li a {
     width: 95%;
   }
   #form-send .form {
-    width: 18rem;
+    width: 19rem;
   }
   #form-send .input {
     width: 15rem;
