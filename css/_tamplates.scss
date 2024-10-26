@@ -68,3 +68,30 @@ $beige-txt-color: #FBFADA;
     opacity: 1;
     transform: translateY(0);
   }
+
+  //buttom back to up page
+  
+  .back-to-top{
+    display: none;
+    z-index: 10;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $light-green-color;
+    color:white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 38px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .back-to-top:hover{
+    opacity: 1;
+    box-shadow: 0px 5px 31px 13px rgba(239, 241, 243, 0.2);
+  }

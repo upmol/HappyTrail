@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -424,23 +425,26 @@ height: 100%;
 
 .wattsApp-btn::after{
   content: 'Написать нам...';
-  position: absolute;right: 70px;
+  position: absolute;bottom: 70px;right: 2px;
   padding: 5px 10px;
   background-color: $second-color;
   color: $beige-txt-color; 
-  font-size: 14px;
-  opacity: 0;
+  border-radius: 10px;
+  font-size: 12px;
+  display: none;
+  opacity: 0.7;
   transition: opacity 0.3s ease;
   white-space: nowrap; 
-  border-radius: 10px
+  
 }
 
 .wattsApp-btn:hover::after{
-  opacity: 1;
+  display: inline;
 }
 
 .wattsApp-btn:hover{
   transform: scale(1.1);
+  box-shadow: 0px 5px 31px 13px rgba(239, 241, 243, 0.2);
 }
 
 
