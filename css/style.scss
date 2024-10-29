@@ -18,7 +18,7 @@ body{
 //first page
 
 #main_part{
-    background-image: url('../photo/landscape-lake-surrounded-by-mountains.webp'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(18, 55, 42, 1) 100%);
+    background-image: url('../photo/landscape-lake-surrounded-by-mountains.jpeg'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(18, 55, 42, 1) 100%);
     @include backgroundImg;
     height: 100vh;
     position: relative; 

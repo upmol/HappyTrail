@@ -77,16 +77,15 @@
           box-shadow: 0px 5px 31px 13px rgba(239, 241, 243, 0.2);
 }
 
-#travel-description {
-  /* Левая часть с изображением */
-}
-#travel-description #travel-discription-main {
+#travel-discription-main {
   position: relative;
   width: 100%;
   height: 80vh;
   overflow: hidden;
 }
-#travel-description .banner-travel-discription {
+
+/* Левая часть с изображением */
+.banner-travel-discription {
   position: absolute;
   top: 0;
   left: 0;
@@ -94,13 +93,13 @@
   height: 100%;
   overflow: hidden;
 }
-#travel-description .banner-travel-discription img {
+.banner-travel-discription img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#travel-description .banner-travel-discription::after {
+.banner-travel-discription::after {
   content: "";
   position: absolute;
   top: 0;
@@ -112,7 +111,8 @@
           clip-path: polygon(100% 100%, 100% 0%, 80% 50%);
   z-index: 1; /* поверх картинки */
 }
-#travel-description .travel-discription-main-title {
+
+.travel-discription-main-title {
   position: absolute;
   top: 0;
   right: 0;
@@ -135,14 +135,14 @@
   z-index: 2;
   color: #FBFADA;
 }
-#travel-description .travel-discription-main-title h1 {
+.travel-discription-main-title h1 {
   font-family: "Train One", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 24px;
   margin: 0;
 }
-#travel-description .travel-discription-main-title p {
+.travel-discription-main-title p {
   font-size: 16px;
   margin: 0;
 }
@@ -161,8 +161,8 @@ body {
 }
 
 #main_part {
-  background-image: url("../photo/landscape-lake-surrounded-by-mountains.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
-  background-image: url("../photo/landscape-lake-surrounded-by-mountains.webp"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
+  background-image: url("../photo/landscape-lake-surrounded-by-mountains.jpeg"), -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 255, 0)), to(rgb(18, 55, 42)));
+  background-image: url("../photo/landscape-lake-surrounded-by-mountains.jpeg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgb(18, 55, 42) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
