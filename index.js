@@ -1,21 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-  console.log('Скрипт загружен');
   // navbar
-  const hamburger = document.querySelector(".hamburger");
-  const nav_menu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger");
+const nav_menu = document.querySelector(".nav-menu");
 
-  if (hamburger && nav_menu) { // Проверка, что элементы существуют
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      nav_menu.classList.toggle("active");
-    });
+if (hamburger && nav_menu) { // Проверка, что элементы существуют
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    nav_menu.classList.toggle("active");
+  });
 
-    document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-      hamburger.classList.remove("active");
-      nav_menu.classList.remove("active");
-    }));
-  }
-
+  document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav_menu.classList.remove("active");
+  }));
+}
   // // swiper with choose a tour
   const carrousel = document.querySelector(".carrousel-travel");
   const cards = document.querySelectorAll(".card");
