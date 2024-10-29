@@ -4,7 +4,7 @@
   #main_part{
     .logo_main{
       img{
-        max-width: 250px;
+        max-width: 400px;
       }
     }
   }
@@ -132,5 +132,16 @@
   width: 40px;
   height: 40px;
   font-size: 28px;
+}
+
+//secont page discriptionTravel
+#travel-description {
+  .banner-travel-discription{
+    width: 100%;
+    filter: brightness(70%);
+  }
+  .travel-discription-main-title{
+    width: 90%;
+  }
 }
 }

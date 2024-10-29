@@ -1,4 +1,5 @@
 @use 'tamplates' as *;
+@use 'discriptionTravel' as *;
 
 
 *{
@@ -30,7 +31,7 @@ body{
             background: transparent;
             position: relative;
             top:-10vh; 
-            width: 50vh;
+            width: 70vh;
         }
     }
     
@@ -73,7 +74,7 @@ li{
   .nav-branding{
     font-size: 2rem;
   }
-  /* transition for links */
+ 
   .nav-link{
     transition: 0.5s ease;
   }
@@ -246,6 +247,7 @@ li{
   @include backgroundImg;
   height: 100%;
   display: flex;
+  margin-top: 5%;
   margin-bottom: 5%;
   justify-content: center;
   .container {
@@ -412,7 +414,7 @@ height: 100%;
     bottom: 20px;
     right: 20px;
     background-color: $second-color;
-    z-index: 10;
+    z-index: 100;
     transition: transform 0.3s ease;
     a{
       margin-left: 10px;
