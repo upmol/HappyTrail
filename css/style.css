@@ -147,6 +147,42 @@
   margin: 0;
 }
 
+#about-travel-diraction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+#about-travel-diraction .txt-about-travel-diraction {
+  width: 40%;
+  color: #FBFADA;
+}
+#about-travel-diraction .txt-about-travel-diraction h1 {
+  font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+}
+#about-travel-diraction .txt-about-travel-diraction p {
+  font-size: 16px;
+  margin: 0;
+}
+#about-travel-diraction .img-travel-diraction {
+  width: 60%;
+}
+#about-travel-diraction .img-travel-diraction img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: polygon(100% 0%, 100% 46%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(100% 0%, 100% 46%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  -webkit-box-shadow: 0px 5px 31px 13px rgba(239, 241, 243, 0.2);
+          box-shadow: 0px 5px 31px 13px rgba(239, 241, 243, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -829,5 +865,20 @@ li a {
   }
   #travel-description .travel-discription-main-title {
     width: 90%;
+  }
+  #about-travel-diraction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #about-travel-diraction .txt-about-travel-diraction {
+    width: 90%;
+  }
+  #about-travel-diraction .img-travel-diraction {
+    width: 100%;
   }
 }
