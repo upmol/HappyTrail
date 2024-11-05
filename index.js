@@ -85,3 +85,24 @@ if (hamburger && nav_menu) { // Проверка, что элементы сущ
   }
 
 });
+
+//Effect appearance
+const observerOptions = {
+  threshold: 0.1 // 10% элемента должно быть видно, чтобы сработало
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // Появление при входе в видимую область
+      } else {
+          entry.target.classList.remove('show'); // Скрытие при выходе из видимой области
+      }
+  });
+}, observerOptions);
+
+// Подключаем Observer ко всем элементам с классом 'animate-on-scroll'
+document.querySelectorAll('.animate-on-scroll').forEach(element => {
+  observer.observe(element);
+});
+
