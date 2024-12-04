@@ -106,3 +106,46 @@ document.querySelectorAll('.animate-on-scroll').forEach(element => {
   observer.observe(element);
 });
 
+//Swipe на мобилке 
+const carousel = document.getElementById("choose-travel");
+let startX = 0;
+let currentX = 0;
+let isSwiping = false;
+
+carousel.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+  isSwiping = true;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+  if (!isSwiping) return;
+  currentX = e.touches[0].clientX;
+});
+
+carousel.addEventListener('touchend', () => {
+  if (!isSwiping) return;
+  const diff = startX - currentX;
+
+  if (diff > 50) {
+    // Свайп влево (вперед)
+    moveToNextSlide();
+  } else if (diff < -50) {
+    // Свайп вправо (назад)
+    moveToPrevSlide();
+  }
+
+  isSwiping = false;
+});
+
+// Функции для перехода на следующий и предыдущий слайд
+const moveToNextSlide = () => {
+  const currentTransform = getComputedStyle(carousel).transform;
+  const offset = parseInt(currentTransform.split(',')[4]) || 0;
+  carousel.style.transform = `translateX(${offset - 100}%)`; // Перемещаем карусель на 100%
+};
+
+const moveToPrevSlide = () => {
+  const currentTransform = getComputedStyle(carousel).transform;
+  const offset = parseInt(currentTransform.split(',')[4]) || 0;
+  carousel.style.transform = `translateX(${offset + 100}%)`; // Перемещаем карусель назад на 100%
+};

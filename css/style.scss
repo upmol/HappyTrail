@@ -25,16 +25,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .logo_main{
         img{
             z-index: 2;
             background: transparent;
             position: relative;
-            top:-10vh; 
+            top:-15vh; 
             width: 70vh;
         }
     }
-    
+    .main-table{
+      z-index: 100;
+      margin-top: -30vh;
+    }
+  
 
 }
 
