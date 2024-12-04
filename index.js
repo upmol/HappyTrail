@@ -111,19 +111,27 @@ const carousel = document.getElementById("choose-travel");
 let startX = 0;
 let currentX = 0;
 let isSwiping = false;
+let currentSlide = 0; // Индекс текущего слайда
 
+const slides = carousel.querySelectorAll('.card'); // Получаем все слайды
+const totalSlides = slides.length; // Общее количество слайдов
+
+// Обработчик начала свайпа
 carousel.addEventListener('touchstart', (e) => {
   startX = e.touches[0].clientX;
   isSwiping = true;
 });
 
+// Обработчик движения свайпа
 carousel.addEventListener('touchmove', (e) => {
   if (!isSwiping) return;
   currentX = e.touches[0].clientX;
 });
 
+// Обработчик окончания свайпа
 carousel.addEventListener('touchend', () => {
   if (!isSwiping) return;
+
   const diff = startX - currentX;
 
   if (diff > 50) {
@@ -137,15 +145,36 @@ carousel.addEventListener('touchend', () => {
   isSwiping = false;
 });
 
-// Функции для перехода на следующий и предыдущий слайд
+// Функция для перехода на следующий слайд
 const moveToNextSlide = () => {
-  const currentTransform = getComputedStyle(carousel).transform;
-  const offset = parseInt(currentTransform.split(',')[4]) || 0;
-  carousel.style.transform = `translateX(${offset - 100}%)`; // Перемещаем карусель на 100%
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+    updateCarouselPosition();
+  }
 };
 
+// Функция для перехода на предыдущий слайд
 const moveToPrevSlide = () => {
-  const currentTransform = getComputedStyle(carousel).transform;
-  const offset = parseInt(currentTransform.split(',')[4]) || 0;
-  carousel.style.transform = `translateX(${offset + 100}%)`; // Перемещаем карусель назад на 100%
+  if (currentSlide > 0) {
+    currentSlide--;
+    updateCarouselPosition();
+  }
 };
+
+// Обновляем позицию карусели в зависимости от текущего слайда
+const updateCarouselPosition = () => {
+  const offset = -currentSlide * 100; // Каждое движение на 100% влево или вправо
+  carousel.style.transform = `translateX(${offset}%)`;
+};
+
+// Чтобы карусель не выходила за пределы:
+const checkSlidePosition = () => {
+  if (currentSlide <= 0) {
+    currentSlide = 0;
+  } else if (currentSlide >= totalSlides - 1) {
+    currentSlide = totalSlides - 1;
+  }
+};
+
+// Инициализация начальной позиции
+updateCarouselPosition();
