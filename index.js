@@ -126,12 +126,17 @@ carousel.addEventListener('touchstart', (e) => {
 carousel.addEventListener('touchmove', (e) => {
   if (!isSwiping) return;
   currentX = e.touches[0].clientX;
+  const diff = startX - currentX;
+  
+  // Добавляем плавное перемещение карусели при свайпе
+  const offset = -currentSlide * 100 + (diff / window.innerWidth) * 100;
+  carousel.style.transform = `translateX(${offset}%)`;
 });
 
 // Обработчик окончания свайпа
 carousel.addEventListener('touchend', () => {
   if (!isSwiping) return;
-
+  
   const diff = startX - currentX;
 
   if (diff > 50) {
@@ -143,13 +148,13 @@ carousel.addEventListener('touchend', () => {
   }
 
   isSwiping = false;
+  updateCarouselPosition();
 });
 
 // Функция для перехода на следующий слайд
 const moveToNextSlide = () => {
   if (currentSlide < totalSlides - 1) {
     currentSlide++;
-    updateCarouselPosition();
   }
 };
 
@@ -157,13 +162,13 @@ const moveToNextSlide = () => {
 const moveToPrevSlide = () => {
   if (currentSlide > 0) {
     currentSlide--;
-    updateCarouselPosition();
   }
 };
 
 // Обновляем позицию карусели в зависимости от текущего слайда
 const updateCarouselPosition = () => {
   const offset = -currentSlide * 100; // Каждое движение на 100% влево или вправо
+  carousel.style.transition = 'transform 0.3s ease'; // Добавляем плавное перемещение
   carousel.style.transform = `translateX(${offset}%)`;
 };
 
